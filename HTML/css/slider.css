@@ -3,11 +3,12 @@
 	height: 300px;
 	position: relative;
 	margin: 10px auto;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 	overflow: hidden;
-	background: transparent url('../img/header-bg.png') repeat 0 0;
-  border: 1px solid #eee;
-	box-shadow: 0 1px 1px rgba(0,0,0,.2), 0 -2px 1px #fff;
+	background: url('../img/element-bg.png') repeat 0 0;
+    border-bottom: 1px solid #eee;
+/*	box-shadow: 0 1px 1px rgba(0,0,0,.2), 0 -2px 1px #fff;
+	behavior: url('js/PIE.htc');*/
 	-webkit-transition: background-position 1.4s ease-in-out .3s;
 	-moz-transition: background-position 1.4s ease-in-out .3s;
 	-o-transition: background-position 1.4s ease-in-out .3s;
@@ -56,7 +57,6 @@
 	width: 50%;
 	top: 40px;
 	white-space: nowrap;
-	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	font-weight: 700;
 }
 .da-slide p {
@@ -67,9 +67,8 @@
 	line-height: 26px;
 	height: 80px;
 	overflow: hidden;
-	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	font-weight: 400;
-	/*font-style: italic;*/
+	font-style: italic;
 }
 .da-slide .da-img {
 	text-align: center;
@@ -94,7 +93,7 @@
 }
 .da-slide .da-link:hover {
 	background: #777;
-  text-decoration: none;
+    text-decoration: none;
 }
 .da-dots {
 	width: 100%;
@@ -118,6 +117,7 @@
 	box-shadow: 
 		1px 1px 1px rgba(0,0,0,.1) inset, 
 		1px 1px 1px rgba(255,255,255,.1);
+	behavior: url('js/PIE.htc');
 }
 .da-dots span.da-dots-current:after {
 	content: '';
@@ -177,9 +177,11 @@
 }
 .da-arrows span:hover:after {
 	box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+	behavior: url('js/PIE.htc');
 }
 .da-arrows span:active:after {
 	box-shadow: 1px 1px 1px rgba(255,255,255,.1);
+	behavior: url('js/PIE.htc');
 }
 .da-arrows span.da-arrows-next:after {
 	background-position: top right;

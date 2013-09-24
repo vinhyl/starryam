@@ -2,24 +2,21 @@
 <html lang="zh-CN">
 <head>
   <title>Starryam test</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <!--[if IE 7]>
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
   <![endif]-->
   <link rel="stylesheet" href="css/style.css">
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/style-ie8.css">
-  <![endif]-->
   <link rel="stylesheet" href="css/blue.css">
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
   <![endif]-->
 </head>
 <body>
@@ -32,37 +29,34 @@
 
   <!-- Navigation Starts -->
 
-  <nav class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          Menu
-        </button>
-        <a class="brand" href="#">Starryam</a>
-        <div class="nav-collapse collapse">
-          <!-- Navigation links starts here -->
-          <ul class="nav">
-            <!-- Main menu -->
-            <li><a href="#">&nbsp;首&nbsp;&nbsp;页&nbsp;</a></li>
-            <li><a href="#">关于星朗</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">留学服务 <b class="caret"></b></a>
-              <!-- Submenus -->
-              <ul class="dropdown-menu">
-                <li><a href="#">高中项目</a></li>
-                <li><a href="#">本科项目</a></li>
-                <li><a href="#">硕博项目</a></li>                 
-              </ul>
-            </li>
-            <li><a href="#">院校信息</a></li>
-            <li><a href="#">新移民服务</a></li>
-            <li><a href="#">US Style</a></li>
-            <li><a href="#">常见问题</a></li>
-            <li><a href="#">联系我们</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Starryam</a>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">&nbsp;首&nbsp;&nbsp;页&nbsp;</a></li>
+          <li><a href="#">关于星朗</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">留学服务 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">高中项目</a></li>
+              <li><a href="#">本科项目</a></li>
+              <li><a href="#">硕博项目</a></li>                 
+            </ul>
+          </li>
+          <li><a href="#">US Style</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
       </div>
     </div>
+    
   </nav>
 
   <!-- Navigation Ends -->
@@ -72,12 +66,12 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="span2 logo">
+        <div class="col-md-2 logo">
           <a href="#">
             星朗 Starryam
           </a>
         </div>
-        <div class="span6 slogan">
+        <div class="col-md-6 slogan">
           <p>立足纽约 因材施校</p>
           One Stop Service, Non Stop Dedication
         </div>
@@ -94,7 +88,7 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="span12">
+        <div class="col-md-12">
          
           <!-- Slider (Parallax Slider) -->
           
@@ -136,7 +130,7 @@
           <!-- Features list -->
 
           <div class="row">
-            <div class="span3">
+            <div class="col-md-3">
               <div class="afeature">
                 <div class="afmatter">
                   <i class="icon-screenshot"></i>
@@ -145,7 +139,7 @@
                 </div>
               </div>                        
             </div>
-            <div class="span3">
+            <div class="col-md-3">
               <div class="afeature">
                 <div class="afmatter">
                   <i class="icon-globe"></i>
@@ -154,7 +148,7 @@
                 </div>
               </div>
             </div>
-            <div class="span3">
+            <div class="col-md-3">
               <div class="afeature">
                 <div class="afmatter">
                   <i class="icon-group"></i>
@@ -163,7 +157,7 @@
                 </div>
               </div>                        
             </div>
-            <div class="span3">
+            <div class="col-md-3">
               <div class="afeature">
                 <div class="afmatter">
                   <i class="icon-gift"></i>
@@ -181,7 +175,7 @@
           <div class="main-content about">
             <div class="row">
 
-              <div class="span6">
+              <div class="col-md-6">
                 <div class="cta">
                   <p class="csmall">星朗留学尽享地理以及资源优势，熟悉大纽约地区学校以及泛美地区等高等院校的办学特色和入学需求。为广大莘莘学子提供免费咨询和一站式的升学服务，其中包括专业定位，选择学校，申请学校，入学面试，签证服务，出国面试培训，来美生活指南，以及住宿和接机安排，星朗将为您排除障碍，铺平您的留洋之路。</p>
                   <p>不确定是否应该到美国留学？不知道怎么选择学校专业？不清楚申请学位和签证流程？还是刚到美国需要帮助？星朗非常乐意帮助您解除困惑。</p>
@@ -198,7 +192,7 @@
                   </div>
                   <div class="modal-body">
                     <div class="row">
-                      <div class="span3">
+                      <div class="col-md-3">
                         <p>纽约办公室</p>
                         <p>地址: 1600 Amphitheatre Parkway Mountain View, CA 94043</p>
                         <p>电话：123456789</p>
@@ -208,7 +202,7 @@
                         <p>电话：987654321</p>
                         <br>
                       </div>
-                      <div class="span2">
+                      <div class="col-md-2">
                         <p>Email: info@starryam.com</p>
                         <p>官方QQ：88888888 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=517902546&site=qq&menu=yes"><img style="width:auto" src="http://wpa.qq.com/pa?p=2:517902546:42" alt="点击这里QQ咨询" title="点击这里QQ咨询"></a></p>          
                         <p>官方微博：星朗留学 <wb:follow-button uid="2991975565" type="red_1" width="67" height="24" ></wb:follow-button></p>
@@ -219,7 +213,7 @@
                 </div>
                 <!-- Contact backdrop ends -->
 
-              <div class="span2">
+              <div class="col-md-2">
                 <div class="teams staff">
                   <div class="pic">
                     <img src="img/lee.jpg" alt="" />
@@ -235,7 +229,7 @@
                   </div>
                 </div>
               </div>
-              <div class="span2">
+              <div class="col-md-2">
                 <div class=" teams staff">
                   <div class="pic">
                     <img src="img/MJs.jpg" alt="" />
@@ -251,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="span2">
+              <div class="col-md-2">
                 <div class=" teams staff">
                   <div class="pic">
                     <img src="img/MJ2s.jpg" alt="" />
@@ -280,7 +274,7 @@
           <div class="testimonial">
             <div class="container">
               <div class="row">
-                <div class="span4">
+                <div class="col-md-4">
                   <!-- Testimonial #1 -->
                   <div class="test">
                     <img src="img/MJ.jpg" alt="MJ">
@@ -290,7 +284,7 @@
                   <div class="tauth"><i class="icon-user"></i> Michael Jordan, <span class="color">University of North Carolina</span></div>
                 </div>
                     
-                <div class="span4">
+                <div class="col-md-4">
                   <!-- Testimonial #2 -->
                   <div class="test">
                     <img src="img/MJ2.jpg" alt="MJ">
@@ -300,7 +294,7 @@
                   <div class="tauth"><i class="icon-user"></i> MJ, <span class="color">Chicago (这一栏是成功案例)</span></div>
                 </div>
 
-                <div class="span4">
+                <div class="col-md-4">
                   <!-- Testimonial #3 -->
                   <div class="test">
                     <img src="img/MJ3.jpg" alt="MJ">
@@ -320,7 +314,7 @@
           <div class="rposts">
             <h4>US Style</h4>
             <div class="row">
-              <div class="span6">
+              <div class="col-md-6">
                 <!-- Recent post 1. Class name should be "rpost1" -->
                 <div class="rpost1">
                   <!-- Image -->
@@ -345,7 +339,7 @@
                 </div>   
               </div>
 
-              <div class="span6">
+              <div class="col-md-6">
                 <!-- Recent post 3. Class name should be "rpost1" -->
                 <div class="rpost1">
                   <div class="rimg">
@@ -384,7 +378,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
           <!-- Widget 1 -->
           <div class="widget">
             <h4>新浪微博</h4>
@@ -395,7 +389,7 @@
             </ul>
           </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
           <!-- widget 2 -->
           <div class="widget">
             <h4>Recent Posts</h4>
@@ -406,7 +400,7 @@
             </ul>
           </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
           <!-- Widget 3 -->
           <div class="widget">
             <h4>Categories</h4>
@@ -420,7 +414,7 @@
           </div>
         </div>
         
-        <div class="span12">
+        <div class="col-md-12">
           <hr />
           <p class="copy">
             Copyright © <a href="#">Starryam.com</a>
@@ -432,21 +426,6 @@
 
   <!-- Footer -->
 
-
-<!--   <footer>
-    <ul class="inline">
-      <li style="width:20px; background:#33b5e5">0</li>
-      <li style="width:20px; background:#aa66cc">1</li>
-      <li style="width:20px; background:#99cc00">2</li>
-      <li style="width:20px; background:#ffbb33">3</li>
-      <li style="width:20px; background:#ff4444">4</li>
-      <li style="width:20px; background:#0099cc">5</li>
-      <li style="width:20px; background:#9933cc">6</li>
-      <li style="width:20px; background:#669900">7</li>
-      <li style="width:20px; background:#ff8800">8</li>
-      <li style="width:20px; background:#cc0000">9</li>
-    </ul>
-  </footer> -->
 
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

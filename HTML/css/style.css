@@ -4,7 +4,6 @@ body {
   line-height: 25px;
   text-shadow: none !important;
   color: #444;
-  padding-top: 46px;
 }
 
 h1, 
@@ -55,45 +54,9 @@ a:focus {
   margin: 10px 0;
 }
 
-form input {
-  font-size: 12px !important;
-}
-
-.form-horizontal input[type="text"],
-.form-horizontal input[type="password"],
-.form-horizontal textarea {
-  width: 90%;
-}
-
-.form-horizontal button {
-  font-size: 12px;
-}
-
-.form-horizontal .control-label {
-  width: 80px;
-}
-
-.form-horizontal .controls {
-  margin-left: 100px;
-}
-
-.form-horizontal .controls:first-child {
-  *padding-left: 100px;
-}
-
-.form-horizontal .form-actions {
-  padding-left: 100px;
-}
-
-.form-actions {
-  padding: 5px 20px 5px;
-  background: transparent;
-  border-top: 0;
-}
-
 .well {
   padding: 5px 10px;
-  ackground: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
 }
 
 /* Image alignment for WP */
@@ -151,13 +114,21 @@ a.btn-inverse:hover {
   color: #fff !important;
 }
 
+.container {
+  max-width: 1000px;
+}
+
 /* Navigation */
 
 .navbar {
   margin: 0;
 }
 
-.navbar-inner {
+.navbar > .container {
+  max-width: 1000px;
+}
+
+.navbar {
   border-radius: 0;
   background-image: none;
   background-repeat: no-repeat;
@@ -166,12 +137,16 @@ a.btn-inverse:hover {
   border-right: 0 !important;
 }
 
-.navbar .brand {
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.navbar .navbar-brand {
   padding-right: 0;
   padding-left: 0;
-  margin-left: 20px;
   float: right;
   font-weight: bold;
+  font-size: 20px;
   line-height: 20px;
   color: #29a1c4;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
@@ -181,22 +156,26 @@ a.btn-inverse:hover {
   transition: all .2s linear;
 }
 
-.navbar .brand:hover {
+.navbar .navbar-brand:hover {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);  
 }
 
-.navbar .btn {
+.navbar button {
   font-size: 13px;
-  padding: 4px 10px;
+  padding: 8px 10px;
   color: #fff !important;
   text-shadow: none !important;
 }
 
-.navbar .btn:hover {
+.navbar button:hover {
   color: #fff !important;
 } 
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+}
 
 .navbar .caret {
   border-top-color: #fff !important;
@@ -205,7 +184,7 @@ a.btn-inverse:hover {
 
 .navbar .nav > li > a {
   text-shadow: none !important;
-  padding: 12px 15px 12px;
+  padding: 15px;
   color: #fff !important;
   -webkit-transition: background 1s ease;
   -moz-transition: background 1s ease;
@@ -229,14 +208,9 @@ a.btn-inverse:hover {
   box-shadow: none;
 }
 
-
 .nav-collapse a {
   font-weight: normal !important;
   text-shadow: none !important;
-}
-
-.navbar .btn-navbar {
-  float: right;
 }
 
 .dropdown-menu{
@@ -796,7 +770,7 @@ header .slogan p {
   width: 190px;
   height: 190px;
   margin: 10px auto;
-  background: #eee url("../img/header-bg.png") repeat;
+  background: #eee url("../img/element-bg.png") repeat;
   border-radius: 250px;
   border: 5px solid #fff;
   box-shadow: 0 0 3px #aaa;
@@ -853,7 +827,7 @@ header .slogan p {
   color: #555;
   text-transform: uppercase;
   font-size: 12px;
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
 }
 
 .blog .meta a,
@@ -1017,7 +991,7 @@ header .slogan p {
 /* Sidebar */
 
 .sidebar {
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   padding: 8px;
@@ -1280,7 +1254,7 @@ header .slogan p {
 }
 
 #portfolio .pcap {
-  background: #eee url("../img/header-bg.png") repeat;
+  background: #eee url("../img/element-bg.png") repeat;
   border: 1px solid #eee;
   padding: 3px 0;
 }
@@ -1351,7 +1325,7 @@ header .slogan p {
 
 .error-page {
   padding: 20px 20px;
-  background: url('../img/header-bg.png') repeat;
+  background: url('../img/element-bg.png') repeat;
   border: 1px solid #ddd;
   border-radius: 10px;
   color: #666;
@@ -1379,7 +1353,7 @@ header .slogan p {
 .csoon-page {
   margin: 80px 0;
   padding: 20px 20px;
-  background: url('../img/header-bg.png') repeat;
+  background: url('../img/element-bg.png') repeat;
   border: 1px solid #ddd;
   border-radius: 10px;
   color: #666;
@@ -1448,7 +1422,7 @@ header .slogan p {
 
 .logreg {
   padding: 5px 10px;
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: inset 0 0 3px #eee;
@@ -1546,7 +1520,7 @@ header .slogan p {
 }
 
 .pricel .phead-bottom {
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -1571,7 +1545,7 @@ header .slogan p {
 }
 
 .pricel .pbutton {
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   border: 1px solid #ddd;
   padding: 10px 0 10px 0;
   color: #777;
@@ -1619,7 +1593,7 @@ header .slogan p {
 .redetails {
   width: 53%;
   float: left;
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   padding: 8px 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -1646,7 +1620,7 @@ header .slogan p {
   margin-right: 10px;
   width: 43.5%;
   float: left;
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
 }
 
 .rbad {
@@ -1657,7 +1631,7 @@ header .slogan p {
   margin-bottom: 20px;
   width: 43.5%;
   float: left;
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
 }
 
 .rgood i {
@@ -1677,7 +1651,7 @@ header .slogan p {
 }
 
 .rbox {
-  background: #eee url('../img/header-bg.png') repeat;
+  background: #eee url('../img/element-bg.png') repeat;
   padding: 8px 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -1724,7 +1698,7 @@ header .slogan p {
 .pdetails {
   padding: 10px 10px;
   border-radius: 0;
-  background: #fff url('../img/header-bg.png') repeat;
+  background: #fff url('../img/element-bg.png') repeat;
   border-radius: 10px;
   box-shadow: inset 0 0 3px #eee;
   margin-top: 20px;
@@ -1830,7 +1804,7 @@ header .slogan p {
 }
 
 .scontact {
-  background: #fff url('../img/header-bg.png') repeat;
+  background: #fff url('../img/element-bg.png') repeat;
   padding: 10px 15px;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -2015,7 +1989,7 @@ header .slogan p {
 /* Clients page */
 
 .cclient {
-  background: #eee url("../img/header-bg.png") repeat;
+  background: #eee url("../img/element-bg.png") repeat;
   border: 1px solid #eee;
   border-radius: 10px;
   margin: 10px 0;
@@ -2091,24 +2065,11 @@ footer .widget {
 /* Responsive */
 
 @media (max-width: 480px) {
-  header .list .social {
-    text-align: center;
-  }
   .logo {
     margin: 0 auto;
   }
   .slogan {
     margin: 0 auto;
-  }
-  .rpost1 {
-    width: 100%;
-  }
-  .rposts img {
-    width: 100%;
-  }
-  .rpost2 {
-    width: 100%;
-    margin-left: 0;
   }
   .da-slide h2 {
     width: 100%;
@@ -2146,7 +2107,8 @@ footer .widget {
     text-align: center;
   }
   .teams .pic img {
-    max-width: 220px;
+    width: 100%;
+    max-width: 150px;
   }
   .time .tidate {
     float: none;
@@ -2168,10 +2130,13 @@ footer .widget {
 }
 
 @media (max-width: 767px) {
-  .navbar-fixed-top {
+  .container {
+    max-width: 100%;
+  }
+  .navbar-static-top {
     margin-bottom: 0 !important;
   }
-  .navbar .brand {
+  .navbar .navbar-brand {
     float: left;
   }
   header .logo {
@@ -2182,17 +2147,14 @@ footer .widget {
     float: none;
     text-align: center;
   }
-  .navbar,
-  header,
-  footer {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .navbar .nav {
     border: 0 !important;
   }
   .navbar .nav > li > a {
     border: 0 !important;
+  }
+  .navbar-collapse {
+    padding-left: 15px;
   }
   .dropdown-menu a {
     border-bottom: none !important;
@@ -2211,20 +2173,12 @@ footer .widget {
   .resume .rinfo {
     margin-top: 15px;
   }
-  .rposts img {
-    width: 100%;
-  }  
   .teams {
     text-align: center;
   }
-  .teams img {
+  .teams .pic img {
+    width: 100%;
     max-width: 300px;
-  }
-  .asocial,
-  .desig {
-    float: none;
-    display: block;
-    clear: both;
   }
   .error .error-small {
     max-width: 300px;
@@ -2254,10 +2208,11 @@ footer .widget {
     float: none;
     margin-right: 0;
   }
-  .redetails {
-    width: 92%;
-    margin-right: 20px;
-    float: none;
+  .form-horizontal .control-label {
+    text-align: left;
+  }
+  .prdetails h5 {
+    margin-top: 20px;
   }
   .rgood {
     width: 92%;
@@ -2277,30 +2232,27 @@ footer .widget {
   } 
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .navbar-fixed-top {
+@media (max-width: 991px) {
+  .navbar-static-top {
     margin-bottom: 0 !important;
   }
-  .navbar .brand {
+/*  .navbar .navbar-brand {
     float: left;
-  }
+  }*/
   .navbar .nav {
     border: 0 !important;
   }
   .navbar .nav > li > a {
     border: 0 !important;
   }
-  .navbar-inner > .container {
-    width: 724px !important;
-  }
   .dropdown-menu a {
     border-bottom: none !important;
   }
+  .form-horizontal .control-label {
+    text-align: left;
+  }
   header .slogan {
     margin-right: 25%;
-  }
-  .rpost2 {
-    margin-left: 10px;
   }
   .entry img {
     display: block;
