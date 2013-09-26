@@ -13,12 +13,14 @@
   <!--[if IE 7]>
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
   <![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
   <![endif]-->
 </head>
 <body>
+  <div id="bootstrapCssTest" class="hide"></div>
   <!--[if lte IE 6]><p class="browser-support">
     我们的网站可能无法在您的浏览器上正常显示。请更新一个新版本的浏览器：<br>
     <a href="//www.google.com/chrome">Google Chrome</a>
@@ -426,20 +428,29 @@
   <!-- Footer Ends -->
 
 
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.isotope.js"></script>
-  <script src="js/jquery.tweet.js"></script>
-  <script src="js/jquery.cslider.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="//lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="//lib.sinaapp.com/js/bootstrap/v3.0.0/js/bootstrap.min.js"></script>
   <script>
-    $(function() {
-    
+    if (typeof($.fn.modal) === 'undefined') {
+      document.write('<script src="js/bootstrap.min.js"><\/script>');
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      if ($('#bootstrapCssTest').is(':visible') === true) {
+        $('head').prepend('<link rel="stylesheet" href="css/bootstrap.min.css">');
+      }
+    });
+  </script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.cslider.js"></script>
+  <script>
+    $(function() {   
       $('#da-slider').cslider({
         autoplay  : true,
         interval : 6000
-      });
-    
+      });   
     });
   </script>
 
