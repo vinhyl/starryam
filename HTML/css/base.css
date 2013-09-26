@@ -366,6 +366,7 @@ a.btn-inverse:hover {
 /* About */
 
 .about-hero {
+  margin-top: 20px;
   padding: 15px 20px 10px 20px;
   background: #fafafa;
   border-radius: 4px;
@@ -458,11 +459,7 @@ a.btn-inverse:hover {
 
 /* Recent Posts */
 
-.rpost-sector {
-  margin:20px auto;
-}
-
-.rpost-sector h4 {
+.recent-post h4 {
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid #eee;
@@ -564,6 +561,9 @@ footer .widget {
 /* Responsive */
 
 @media (max-width: 480px) {
+  .side-col {
+    display: none;
+  }
   .da-slide h2 {
     width: 100%;
     font-size: 30px;
