@@ -209,7 +209,7 @@ a.btn-inverse:hover {
 } 
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: #fff;
+  background-color: #fff;
 }
 
 .navbar .caret {
@@ -281,6 +281,50 @@ a.btn-inverse:hover {
 .dropdown-menu::after,
 .dropdown-menu::before {
   border: none !important;
+}
+
+/* Sidebar Navigation */
+
+.sidenav {
+  margin-top: 30px;
+  padding-top: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+#sidenav .nav > li > a {
+  display: block;
+  color: #444;
+  padding: 5px 20px;
+}
+
+#sidenav .nav > li > a:hover,
+#sidenav .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eaeaea;
+  border-right: 1px solid #dadada;
+}
+
+#sidenav .nav > .active > a,
+#sidenav .nav > .active:hover > a,
+#sidenav .nav > .active:focus > a {
+  font-weight: bold;
+  color: #30add1;
+  background-color: transparent;
+  border-right: 1px solid #30add1;
+}
+
+#sidenav .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+
+#sidenav .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
 }
 
 /* Home banner */
@@ -558,10 +602,88 @@ footer .widget {
   margin-bottom: 10px;
 }
 
+
+#feature1,
+#feature2,
+#feature3,
+#feature4 {
+  padding-top: 75px;
+  margin-top: -70px;
+}
+
+
+.hero {
+  padding-top: 90px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+  color: #777;
+  background: url('../img/dot.png') left center repeat-x;
+  background-size: 4px 20px;
+}
+
+.hero h3 span {
+  background: #fff url('../img/body-bg.png') repeat;
+  padding-right: 8px;
+}
+
+.hero p {
+ color: #666;
+}
+
+.serv-a {
+  width: 48%;
+  float: left;
+  margin-right: 10px;
+}
+
+.serv-b {
+  width: 48%;
+  float: right;
+}
+
+.serv {
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
+  -webkit-transition: background 2s ease;
+  -moz-transition: background 2s ease;
+  -o-transition: background 2s ease;
+  transition: background 2s ease;
+}
+
+.serv:hover {
+  background: #fafafa;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.serv .simg i {
+  font-size: 50px;
+  width: 45px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
 /* Responsive */
 
 @media (max-width: 480px) {
-  .side-col {
+  .sidebar-hidden {
     display: none;
   }
   .da-slide h2 {
@@ -650,7 +772,49 @@ footer .widget {
   .slogan {
     padding: 80px 30% 0 0;
   }
+  #sidenav .nav > .active > ul {
+    display: block;
+  }
+  #sidenav.affix,
+  #sidenav.affix-bottom {
+    width: 21%;
+  }
+  #sidenav.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  #sidenav.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  #sidenav.affix-bottom .sidenav,
+  #sidenav.affix .sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
+
+@media screen and (min-width: 992px) {
+  #sidenav .nav > .active > ul {
+    display: block;
+  }
+  #sidenav.affix,
+  #sidenav.affix-bottom {
+    width: 220px;
+  }
+  #sidenav.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  #sidenav.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  #sidenav.affix-bottom .sidenav,
+  #sidenav.affix .sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 
 @media (min-width: 1441px) {
   .home-banner {
