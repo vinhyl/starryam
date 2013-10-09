@@ -1,4 +1,4 @@
-/* Green Color CSS */
+/* Blue Color CSS */
 
 .color {
   color: #30add1;
@@ -74,6 +74,13 @@ a:hover {
 .navbar .nav .active > a:hover,
 .navbar .nav .active > a:focus {
   background: #29a1c4 !important;
+}
+
+#sidenav .nav > .active > a,
+#sidenav .nav > .active:hover > a,
+#sidenav .nav > .active:focus > a {
+  color: #30add1;
+  border-right: 1px solid #30add1;
 }
 
 .dropdown-toggle {
@@ -184,6 +191,10 @@ a:hover {
 
 .serv .simg i {
   color: #30add1;
+}
+
+.service i{
+color:#30add1;
 }
 
 .nav-tabs > li > a:hover {

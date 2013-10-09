@@ -285,9 +285,15 @@ a.btn-inverse:hover {
 
 /* Sidebar Navigation */
 
+#sidenav.affix {
+  position: static;
+}
+
 .sidenav {
   margin-top: 30px;
+  margin-bottom: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   text-shadow: 0 1px 0 #fff;
   background-color: #fafafa;
   border-radius: 5px;
@@ -310,9 +316,7 @@ a.btn-inverse:hover {
 #sidenav .nav > .active:hover > a,
 #sidenav .nav > .active:focus > a {
   font-weight: bold;
-  color: #30add1;
   background-color: transparent;
-  border-right: 1px solid #30add1;
 }
 
 #sidenav .nav .nav {
@@ -612,30 +616,56 @@ footer .widget {
 }
 
 
-.hero {
+.section {
   padding-top: 90px;
   margin-top: -50px;
   margin-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
 
-.hero h3 {
+.section h3 {
   padding: 0;
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 20px;
+  font-weight: bold;
   line-height: 35px;
   color: #777;
   background: url('../img/dot.png') left center repeat-x;
   background-size: 4px 20px;
 }
 
-.hero h3 span {
+.section h3 span {
   background: #fff url('../img/body-bg.png') repeat;
   padding-right: 8px;
 }
 
-.hero p {
+.section p {
  color: #666;
+}
+
+.services{
+margin:20px 0px;
+}
+
+.service{
+background:#fff;
+padding:3px 10px;
+border:1px solid #e7e7e7;
+margin-bottom:10px;
+border-radius:5px;
+border-bottom:3px solid #eee;
+}
+
+.service h5{
+padding:3px 0px 8px 0px;
+margin:3px 0px 4px 0px;
+border-bottom:1px solid #f1f1f1;
+}
+
+.service i{
+font-size:20px;
+margin-top:3px;
+margin-right:8px;
 }
 
 .serv-a {
@@ -771,25 +801,6 @@ footer .widget {
   }
   .slogan {
     padding: 80px 30% 0 0;
-  }
-  #sidenav .nav > .active > ul {
-    display: block;
-  }
-  #sidenav.affix,
-  #sidenav.affix-bottom {
-    width: 21%;
-  }
-  #sidenav.affix {
-    position: fixed; /* Undo the static from mobile first approach */
-    top: 80px;
-  }
-  #sidenav.affix-bottom {
-    position: absolute; /* Undo the static from mobile first approach */
-  }
-  #sidenav.affix-bottom .sidenav,
-  #sidenav.affix .sidenav {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
 
