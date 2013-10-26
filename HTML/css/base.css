@@ -420,7 +420,7 @@ a.btn-inverse:hover {
   border-bottom:3px solid #eee;
 }
 
-.feature-about h5 {
+.feature-about h4 {
   padding:3px 0px 8px 0px;
   margin:3px 0px 4px 0px;
   border-bottom:1px solid #f1f1f1;
@@ -449,12 +449,17 @@ a.btn-inverse:hover {
   margin-top: 20px;
 }
 
+.team .staff {
+  float: left;
+}
+
 .team .pic {
   margin-bottom: 5px;
 }
 
 .team .pic img {
-  border-radius: 6px;
+  max-width: 120px;
+  border-radius: 10px;
   behavior: url('js/PIE.htc');
 }
 
@@ -493,10 +498,13 @@ a.btn-inverse:hover {
 }
 
 .testimonial img {
+  border-radius: 10px;
   float: right;
   width: 50%;
-  max-width: 140px;
+  max-width: 120px;
   padding-left: 1em;
+  padding-bottom: 1em;
+  behavior: url('js/PIE.htc');
 }
 
 .testimonial-arrow {
@@ -631,7 +639,6 @@ footer .widget {
   padding-top: 90px;
   margin-top: -50px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
 }
 
 .section h3 {
@@ -673,9 +680,12 @@ footer .widget {
   .da-slide .da-img {
     display: none;
   }
+  .team .staff {
+    width: 50%;
+  }
   .team .pic img {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 
@@ -713,9 +723,8 @@ footer .widget {
   .team {
     text-align: center;
   }
-  .team .pic img {
-    width: 100%;
-    max-width: 300px;
+  .team .staff {
+    padding: 6%;
   }
   .desig {
     float: none;
@@ -743,6 +752,9 @@ footer .widget {
   .slogan {
     padding: 80px 30% 0 0;
   }
+  .team .staff {
+    padding: 1.5%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -764,6 +776,9 @@ footer .widget {
   #sidenav.affix .sidenav {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .team .staff {
+    padding: 3%;
   }
 }
 
